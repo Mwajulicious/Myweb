@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script type="text/javascript">
+    function mult(){
+      a=Number(document.calc.first.value);
+      b=Number(document.calc.second.value);
+      c=a*b;
+      document.calc.total.value=c;
+    }
+
+    function add(){
+      a=Number(document.calc.first.value);
+      b=Number(document.calc.second.value);
+      c=a+b;
+      document.calc.total.value=c;
+    }
+
+
+    function sub(){
+      a=Number(document.calc.first.value);
+      b=Number(document.calc.second.value);
+      c=a-b;
+      document.calc.total.value=c;
+    }
+
+
+    function div(){
+      a=Number(document.calc.first.value);
+      b=Number(document.calc.second.value);
+      c=a/b;
+      document.calc.total.value=c;
+    }
+
+    function mod(){
+      a=Number(document.calc.first.value);
+      b=Number(document.calc.second.value);
+      c=a%b;
+      document.calc.total.value=c;
+    }
+  </script>
+
+  <!-- Opening a HTML Form. -->
+  <form name="calc">
+
+    <!-- Here user will enter 1st number. -->
+    Number 1: <input type="text" name="first">
+    
+    <br><br>
+
+    <!-- Here user will enter 2nd number. -->
+    Number 2: <input type="text" name="second">
+
+    <br><br>
+    
+
+    <input type="button" value="+" onclick="javascript:add();">
+    <input type="button" value="-" onclick="javascript:sub();">
+    <input type="button" value="*" onclick="javascript:mult();">
+    <input type="button" value="/" onclick="javascript:div();">
+    <input type="button" value="%" onclick="javascript:mod();">
+   
+    <br><br>
+
+    <!-- Here result will be displayed. -->
+    Result: <input type="text" name="total">
+
+  </body>
+  </html>
